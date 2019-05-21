@@ -1,1 +1,115 @@
-My Page
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Nav -->
+    <div class="uk-container container-hero uk-height-viewport">
+    <nav class="uk-navbar-container navbar uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+
+          <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+          <ul class="uk-navbar-nav">
+              <li>
+                  <a href="#">
+                      <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                      Features
+                  </a>
+              </li>
+          </ul>
+
+          <div class="uk-navbar-item">
+              <div>Some <a href="#">Link</a></div>
+          </div>
+
+          <div class="uk-navbar-item">
+              <form action="javascript:void(0)">
+                  <input class="uk-input uk-form-width-small" type="text" placeholder="Input">
+                  <button class="uk-button uk-button-default">Button</button>
+              </form>
+          </div>
+
+      </div>
+    </nav>
+
+
+    <div class="uk-child-width-expand@s uk-text-center content" uk-grid>
+
+    <!-- Left -->
+    <div>
+      <div>
+        <div class="uk-card uk-card-default">
+
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="uk-card uk-card-default uk-card-body">
+        <form id="sales-demo-form" method="GET" target="_blank" action="javascript:submitForm()">
+          <fieldset class="uk-fieldset">
+
+              <!-- Title -->
+              <legend class="uk-legend">Request a demo</legend>
+
+              <!-- Name field-->
+              <div class="uk-margin">
+                  <input class="uk-input" name="name" id="name" type="text" placeholder="Name">
+              </div>
+              <!-- Email field-->
+              <div class="uk-margin">
+                  <input class="uk-input" name="email" id="email" type="email" placeholder="Email">
+              </div>
+
+              <div class="uk-margin">
+                  <select class="uk-select">
+                      <option>Option 01</option>
+                      <option>Option 02</option>
+                  </select>
+              </div>
+
+              <div class="uk-margin">
+                  <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+              </div>
+              <div class="uk-margin">
+                  <button class="uk-button uk-button-primary" type="submit">Submit</button>
+              </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <script>
+    function submitForm() {
+
+    var demoForm = document.getElementById("sales-demo-form");
+
+    name = encodeURIComponent(demoForm.name.value);
+    email = encodeURIComponent(demoForm.email.value);
+    company = encodeURIComponent(demoForm.company.value);
+    city = encodeURIComponent(demoForm.city.value);
+    state = encodeURIComponent(demoForm.state.value);
+
+    data = [name, email, company, city, state];
+    console.log(data);
+
+    redirectURL = "https://go.oncehub.com/ANRDiscoveryCall?soskip=1&name=" + name + "&email=" + email + "&company=" + company + "&city=" + city + "&state=" + state;
+    console.log(redirectURL);
+    window.open(redirectURL, '_blank');
+    }
+    </script>
+
+  </body>
+</html>
