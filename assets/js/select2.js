@@ -49,6 +49,7 @@
     return content;
   }
 
+  // Hide search bar
   $(document).ready(function() {
     $("#budget").select2({
       minimumResultsForSearch: Infinity
