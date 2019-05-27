@@ -18,6 +18,7 @@ function thankYou(){
   <h1 class="display-4 text-center mb-3">
     Thanks ${firstName}.
   </h1>
+  <br>
   `
 
   const thankYouMessageBody = document.querySelector('#thank-you-message-body');
