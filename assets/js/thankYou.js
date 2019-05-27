@@ -6,13 +6,10 @@ function thankYou(){
 
   var name = url.searchParams.get("Name");
   var email = url.searchParams.get("Email");
+  var company = url.searchParams.get("company");
 
   var nameString = name.split(" ");
   var firstName = nameString[0];
-
-  console.log(nameString);
-  console.log(firstName);
-  console.log(email);
 
   const thankYouMessageHeading = document.querySelector('#thank-you-message-heading');
 
@@ -30,7 +27,7 @@ function thankYou(){
   <p class="text-muted text-center mb-5">
     We've sent a confirmation email to <strong class="text-white">${email}</strong>.
     <br>
-    Looking forward to learning more about your needs.
+    Looking forward to learning more about your needs at ${company}.
   </p>
   `
 };
