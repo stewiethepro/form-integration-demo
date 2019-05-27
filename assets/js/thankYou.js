@@ -18,7 +18,6 @@ function thankYou(){
   <h1 class="display-4 text-center mb-3">
     Thanks ${firstName}.
   </h1>
-  <br>
   `
 
   const thankYouMessageBody = document.querySelector('#thank-you-message-body');
@@ -27,7 +26,6 @@ function thankYou(){
   `
   <p class="text-muted text-center mb-5">
     We've sent a confirmation email to <strong class="text-white">${email}</strong>.
-    <br>
     <br>
     Looking forward to learning more about your needs at ${company}.
   </p>
