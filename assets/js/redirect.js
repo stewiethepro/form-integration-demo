@@ -10,7 +10,7 @@ function submitForm() {
   data = [name, email, company, budget];
   console.log(data);
 
-  redirectURL = "https://go.oncehub.com/ANRDiscoveryCall?soskip=1&name=" + name + "&email=" + email + "&company=" + company + "&budget=" + budget
+  redirectURL = "https://stewiethepro.github.io/form-test/booking-page.html?soskip=1&name=" + name + "&email=" + email + "&company=" + company + "&budget=" + budget
   console.log(redirectURL);
   window.open(redirectURL, '_blank');
 };
