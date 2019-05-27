@@ -3,7 +3,7 @@ function thankYou(){
   var url_string = window.location.href;
   var decoded = decodeURI(url_string);
   var url = new URL(decoded);
-  var name = url.searchParams.get("name");
+  var name = url.searchParams.get("Name");
 
   var nameString = name.split(" ");
   var firstName = nameString[0];
