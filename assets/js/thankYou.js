@@ -27,6 +27,7 @@ function thankYou(){
   <p class="text-muted text-center mb-5">
     We've sent a confirmation email to <strong class="text-white">${email}</strong>.
     <br>
+    <br>
     Looking forward to learning more about your needs at ${company}.
   </p>
   `
