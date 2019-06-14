@@ -1,16 +1,19 @@
-const embeddedBP = document.getElementById('SOIDIV_ANRDiscoveryCall');
+function checkSOSkip {
 
-var url_string = window.location.href;
-var decoded = decodeURI(url_string);
-var url = new URL(decoded);
+  const embeddedBP = document.getElementById('SOIDIV_ANRDiscoveryCall');
 
-var soSkip = url.searchParams.get('soskip');
+  var url_string = window.location.href;
+  var decoded = decodeURI(url_string);
+  var url = new URL(decoded);
 
-if (soSkip) {
-  embeddedBP.setAttribute('data-psz','11');
-  console.log('Booking form skip enabled');
-}
-else {
-  embeddedBP.setAttribute('data-psz','10')
-  console.log('Booking form skip disabled');
-}
+  var soSkip = url.searchParams.get('soskip');
+
+  if (soSkip) {
+    embeddedBP.setAttribute('data-psz','11');
+    console.log('Booking form skip enabled');
+  }
+  else {
+    embeddedBP.setAttribute('data-psz','10')
+    console.log('Booking form skip disabled');
+  };
+};
