@@ -17,3 +17,5 @@ function checkSOSkip() {
     console.log('Booking form skip disabled');
   };
 };
+
+checkSOSkip();
