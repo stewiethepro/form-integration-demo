@@ -1,4 +1,4 @@
-function checkSOSkip {
+function checkSOSkip() {
 
   const embeddedBP = document.getElementById('SOIDIV_ANRDiscoveryCall');
 
